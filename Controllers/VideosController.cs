@@ -35,7 +35,8 @@ namespace mentorientApi.Controllers
                 return BadRequest(ModelState);
             }
 
-
+            _context.Add(video);
+            _context.SaveChanges();
             
             return new ObjectResult(video);
         }
