@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using mentorientApi.Models;
 using mentorientApi.Data;
+using System.Linq;
 
 namespace mentorientApi.Controllers
 {
@@ -16,16 +17,10 @@ namespace mentorientApi.Controllers
 
         // GET api/videos
         [HttpGet]
-        public Video Get()
+        public IEnumerable<Video> Get()
         {
-            var video = new Video
-            {
-                VideoId = 1, 
-                Title = "How to type", 
-                Description = "video on how to type faster",
-                Source = "~/how-to-type.mp4"
-            };
-            return video;
+            return _context.Videos.ToList();
+
         }
 
         [HttpPost]
