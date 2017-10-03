@@ -23,6 +23,7 @@ namespace mentorientApi.Controllers
 
         }
 
+        // POST api/videos
         [HttpPost]
         public IActionResult Post([FromBody] Video video)
         {
