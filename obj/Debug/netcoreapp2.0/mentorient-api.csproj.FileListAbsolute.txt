@@ -1,0 +1,11 @@
+C:\projects\mentorient-api\obj\Debug\netcoreapp2.0\mentorient-api.csprojResolveAssemblyReference.cache
+C:\projects\mentorient-api\obj\Debug\netcoreapp2.0\mentorient-api.csproj.CoreCompileInputs.cache
+C:\projects\mentorient-api\obj\Debug\netcoreapp2.0\mentorient-api.AssemblyInfoInputs.cache
+C:\projects\mentorient-api\obj\Debug\netcoreapp2.0\mentorient-api.AssemblyInfo.cs
+C:\projects\mentorient-api\bin\Debug\netcoreapp2.0\mentorient-api.deps.json
+C:\projects\mentorient-api\bin\Debug\netcoreapp2.0\mentorient-api.runtimeconfig.json
+C:\projects\mentorient-api\bin\Debug\netcoreapp2.0\mentorient-api.runtimeconfig.dev.json
+C:\projects\mentorient-api\bin\Debug\netcoreapp2.0\mentorient-api.dll
+C:\projects\mentorient-api\bin\Debug\netcoreapp2.0\mentorient-api.pdb
+C:\projects\mentorient-api\obj\Debug\netcoreapp2.0\mentorient-api.dll
+C:\projects\mentorient-api\obj\Debug\netcoreapp2.0\mentorient-api.pdb
