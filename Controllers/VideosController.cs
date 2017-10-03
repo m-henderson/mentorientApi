@@ -37,5 +37,14 @@ namespace mentorientApi.Controllers
             return new ObjectResult(video);
         }
 
+        // GET api/videos/id
+        [HttpGet("{id}")]
+        public IActionResult GetById(long id)
+        {
+            var video = _context.Videos.FirstOrDefault(v => v.VideoId == id);
+
+            return new ObjectResult(video);
+        }
+
     }
 }
