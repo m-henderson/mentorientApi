@@ -12539,11 +12539,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\projects\\mentorient-api\\mentorient-api.csproj",
-      "projectName": "mentorient-api",
-      "projectPath": "C:\\projects\\mentorient-api\\mentorient-api.csproj",
+      "projectUniqueName": "C:\\projects\\mentorientApi\\mentorientApi.csproj",
+      "projectName": "mentorientApi",
+      "projectPath": "C:\\projects\\mentorientApi\\mentorientApi.csproj",
       "packagesPath": "C:\\Users\\Michael Henderson\\.nuget\\packages\\",
-      "outputPath": "C:\\projects\\mentorient-api\\obj\\",
+      "outputPath": "C:\\projects\\mentorientApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
