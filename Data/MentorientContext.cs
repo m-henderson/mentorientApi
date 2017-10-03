@@ -1,13 +1,14 @@
-using mentorient_api.Models;
+using mentorientApi.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace mentorient_api.Data
+namespace mentorientApi.Data
 {
     public class MentorientContext : DbContext
     {
         public MentorientContext(DbContextOptions<MentorientContext> options)
             : base(options)
-        { }
+            {
+            }
 
         public DbSet<Video> Videos { get; set; }
     }

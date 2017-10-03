@@ -7,7 +7,7 @@
         {
             "taskName": "build",
             "args": [
-                "${workspaceRoot}/mentorient-api.csproj"
+                "${workspaceRoot}/mentorientApi.csproj"
             ],
             "isBuildCommand": true,
             "problemMatcher": "$msCompile"
