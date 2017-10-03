@@ -1,12 +1,19 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using mentorientApi.Models;
+using mentorientApi.Data;
 
 namespace mentorientApi.Controllers
 {
     [Route("api/[controller]")]
     public class VideosController : Controller
     {
+        private readonly MentorientContext _context;
+        public VideosController(MentorientContext context )
+        {
+            _context = context;
+        }
+
         // GET api/videos
         [HttpGet]
         public Video Get()
@@ -27,6 +34,7 @@ namespace mentorientApi.Controllers
             if(!ModelState.IsValid){
                 return BadRequest(ModelState);
             }
+
 
             
             return new ObjectResult(video);
