@@ -43,8 +43,28 @@ namespace mentorientApi.Controllers
         {
             var video = _context.Videos.FirstOrDefault(v => v.VideoId == id);
 
+            if (video == null)
+            {
+                return NotFound();
+            }
+
             return new ObjectResult(video);
         }
 
+        // PUT api/videos/id
+        [HttpPut("{id}")]
+        public IActionResult Update(long id, [FromBody] Video video)
+        {
+            var videoInDb = _context.Videos.FirstOrDefault(v => v.VideoId == id);
+           
+            videoInDb.Title = video.Title;
+            videoInDb.Description = video.Description;
+            videoInDb.Source = video.Source;
+
+            _context.Videos.Update(videoInDb);
+            _context.SaveChanges();
+
+            return new NoContentResult();
+        }
     }
 }
