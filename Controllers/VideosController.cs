@@ -66,5 +66,20 @@ namespace mentorientApi.Controllers
 
             return new NoContentResult();
         }
+
+        // DELETE api/videos/id
+        [HttpDelete("{id}")]
+        public IActionResult Delete(long id)
+        {
+            var video = _context.Videos.FirstOrDefault(v => v.VideoId == id);
+            if (video == null)
+            {
+                return NotFound();
+            }
+
+            _context.Videos.Remove(video);
+            _context.SaveChanges();
+            return new NoContentResult();
+        }
     }
 }
