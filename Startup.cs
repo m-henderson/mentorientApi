@@ -26,6 +26,8 @@ namespace mentorientApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+
+            services.AddCors();
             
             services.AddDbContext<MentorientContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
@@ -58,6 +60,11 @@ namespace mentorientApi
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+
+
+            // Shows UseCors with CorsPolicyBuilder.
+            app.UseCors(builder =>
+            builder.WithOrigins("http://localhost:4200"));
 
             app.UseStaticFiles();
 
