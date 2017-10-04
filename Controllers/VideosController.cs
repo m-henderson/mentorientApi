@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using mentorientApi.Models;
 using mentorientApi.Data;
 using System.Linq;
+using Microsoft.AspNetCore.Http;
 
 namespace mentorientApi.Controllers
 {
@@ -30,6 +31,8 @@ namespace mentorientApi.Controllers
             if(!ModelState.IsValid){
                 return BadRequest(ModelState);
             }
+
+            return null;
 
             _context.Add(video);
             _context.SaveChanges();

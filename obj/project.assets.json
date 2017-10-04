@@ -13154,11 +13154,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\projects\\mentorientApi\\mentorientApi.csproj",
+      "projectUniqueName": "c:\\projects\\mentorientApi\\mentorientApi.csproj",
       "projectName": "mentorientApi",
-      "projectPath": "C:\\projects\\mentorientApi\\mentorientApi.csproj",
+      "projectPath": "c:\\projects\\mentorientApi\\mentorientApi.csproj",
       "packagesPath": "C:\\Users\\Michael Henderson\\.nuget\\packages\\",
-      "outputPath": "C:\\projects\\mentorientApi\\obj\\",
+      "outputPath": "c:\\projects\\mentorientApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
