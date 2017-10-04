@@ -6,6 +6,8 @@ using mentorientApi.Data;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Cors.Internal;
 using Microsoft.AspNetCore.SpaServices.Webpack;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -26,7 +28,7 @@ namespace mentorientApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-
+           
             services.AddCors();
             
             services.AddDbContext<MentorientContext>(options =>
@@ -64,7 +66,10 @@ namespace mentorientApi
 
             // Shows UseCors with CorsPolicyBuilder.
             app.UseCors(builder =>
-            builder.WithOrigins("http://localhost:4200"));
+            builder.WithOrigins("http://localhost:4200")
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .AllowAnyOrigin());
 
             app.UseStaticFiles();
 
